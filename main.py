@@ -190,6 +190,7 @@ while run:
     origin = list(origin)
 
     forward_v = (forward_v * .8)
+
     if keys[pygame.K_w]:
         forward_v -= .2
     if keys[pygame.K_s]:
@@ -199,6 +200,7 @@ while run:
     origin[0] -= math.sin(angleY) * forward_v
 
     side_v = (side_v * .8)
+
     if keys[pygame.K_d]:
         side_v -= .2
     if keys[pygame.K_a]:
